@@ -6,3 +6,7 @@ They Include
 .The Login
 .The Register
 .The Dashboard
+
+It will later include a python web programming language Flask that we shall use to create all the features of a shopping cart within the system and include
+. ReactJs as a frontend language
+
