@@ -1,0 +1,20 @@
+Create a class called Shopping cart
+----LOGIN----
+1. Enter a valid login and password
+2. Enter a Wrong username and password
+3. Blank username and password
+
+---Register---
+1. Enter valid details
+2. Empty details
+3. One or more details missing
+
+
+---Dashboard---
+1. if items is empty  nothing to display
+2. display all items of products
+
+---Shopping cart--
+1. Create an Empty Shopping cart
+2. Add items of shopping products
+3. Delete items off shopping products
