@@ -1,10 +1,14 @@
+# app/__init__.py
+
 from flask_api import FlaskAPI
-from flask_sqlalchemy import SQLAlchemy
+from flask.ext.sqlalchemy import SQLAlchemy
+import os
 
 # local import
 from instance.config import app_config
 
-# initialize sql-alchemy
+
+# Initialize sql-alchemy
 db = SQLAlchemy()
 
 def create_app(config_name):

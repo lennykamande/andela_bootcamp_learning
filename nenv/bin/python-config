@@ -1,4 +1,4 @@
-#!/home/lennykamande/Shopping/nenv/bin/python
+#!/home/lennykamande/shopping/nenv/bin/python
 
 import sys
 import getopt
