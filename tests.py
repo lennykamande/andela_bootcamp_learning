@@ -4,6 +4,7 @@ from flask import Flask, url_for
 from flask_testing import TestCase
 from app import app
 
+
 class MyTest(TestCase):
 
     def create_app(self):
