@@ -7,6 +7,6 @@ sudo: required
 
 before_script:
   - pip install -r requirements.txt
-  
+
 script:
-  - python setup.py test
+  - python tests.py
