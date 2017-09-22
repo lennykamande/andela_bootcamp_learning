@@ -7,4 +7,4 @@ They Include
 .The Register
 .The Dashboard
 
-https://travis-ci.org/lennykamande/andela_bootcamp_learning.svg?branch=master
+[![Build Status](https://travis-ci.org/lennykamande/Shopping-List-V2.svg?branch=master)](https://travis-ci.org/lennykamande/Shopping-List-V2)
