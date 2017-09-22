@@ -1,4 +1,4 @@
 #Files that should be ignored
 *.pyc
-nenv/
-.vscode/
+nenv/*
+.vscode/*
