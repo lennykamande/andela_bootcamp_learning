@@ -6,3 +6,5 @@ They Include
 .The Login
 .The Register
 .The Dashboard
+
+https://travis-ci.org/lennykamande/andela_bootcamp_learning.svg?branch=master
