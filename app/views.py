@@ -5,20 +5,20 @@ from models import User, Shoppinglist
 
 
 
-@app.route('/')
-def index():
+@app.route('/dashboard')
+def dashboard():
     
     return render_template("dashboard.html")
 
-@app.route('/login', methods=['GET','POST'])
+@app.route('/', methods=['GET','POST'])
 def login():
     if request.method=='POST':
         email=request.form['email']
         password=request.form['password']
         check = User(email,password)
         check.login
-        if (check == True):
-            return redirect('/index')
+        if (check.login):
+            return redirect(url_for('dashboard'))
     else:
        return render_template("login.html")
     

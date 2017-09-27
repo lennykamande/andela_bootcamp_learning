@@ -12,12 +12,17 @@ class User(object):
     def register(self, username, firstname, lastname, email, password):
 			x = users.append(username, firstname, password, email, lastname )
 			print x
-    def login(self, ):
-			pass
+    def login(self, email, password):
+			return next((obj for obj in users if obj.email == email and obj.password == password), none)
+
 
     def logout(User):
+		"""Logout user from sessions."""
 			pass
-
+	@property
+    def is_authenticated(self):
+        """Return True if the user is authenticated."""
+        return self.authenticate
 
 class Shoppinglist(object):
 	
