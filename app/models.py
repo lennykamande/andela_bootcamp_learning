@@ -1,3 +1,5 @@
+
+users = []
 class User(object):
 
     def __init__(self, firstname, lastname, username, email, password):
@@ -6,18 +8,15 @@ class User(object):
     	self.password = password
     	self.firstname = firstname
     	self.lastname = lastname
-        self.users = []
-    	
-    
-    def register(self, username, email, password, firstname, lastname):
-    	self.users.append(username,email,password,firstname,lastname)
-        return self.users[firstname]
-  
-    def login(self, email, password):
-    	pass
-  
-    def logout(self, username,):
-    	pass
+		
+    def register(self, username, firstname, lastname, email, password):
+			x = users.append(username, firstname, password, email, lastname )
+			print x
+    def login(self, ):
+			pass
+
+    def logout(User):
+			pass
 
 
 class Shoppinglist(object):
