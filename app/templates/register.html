@@ -39,18 +39,12 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    Lenny Kamande <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
-                                        <a href="#">Logout</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Settings</a>
-                                    </li>
-                                </ul>
+                            <li>
+                                <a href="{{ url_for('login') }}">Login</a>
+                            </li>
+                            <li>
+                                <a href="{{ url_for('register') }}">Register</a>
+                            </li>
                             </li>
                     </ul>
                 </div>
@@ -60,29 +54,27 @@
                     <div class="home">
                         <div class ="item">
                             <div class="content">
-                                <form action="#" class="form-horizontal">
+ 
+                                <form action="{{ url_for('register') }}" method="post" class="form-horizontal">
                                     <div class="logo">
                                         <h1>BW</h1>
                                     </div>
-                                    <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" placeholder="First Name">
-                                    </div>
-                                    <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                            <input type="text" class="form-control" placeholder="Last Name">
-                                    </div>
+                                
                                     <div class="input-group">
                                             <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                                            <input type="text" class="form-control" placeholder="Email Address">
+                                            <input type="text" class="form-control" placeholder="Email Address" name="email">
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                                            <input type="text" class="form-control" placeholder="User Name" name="username">
                                         </div>
                                         <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                                <input type="password" class="form-control" placeholder="Password">
+                                                <input type="password" class="form-control" placeholder="Password" name="pass">
                                         </div>
                                         <div class="input-group">
                                                 <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                                <input type="password" class="form-control" placeholder="Confirm Password">
+                                                <input type="password" class="form-control" placeholder="Confirm Password" name="passc">
                                             </div>
                                            
                                     <div class="form-group">

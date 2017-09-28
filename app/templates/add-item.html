@@ -42,13 +42,13 @@
                     <ul class="nav navbar-nav navbar-right">
                         
                         <li>
-                            <a href="{{ url_for('add_item') }}">Add Item</a>
+                            <a href="#">Add List</a>
                         </li>            
                         <li>
-                             {{ owner }} 
+                            <a href="#"> {{ username }} </a>
                         </li>
                         <li>
-                            <a href="{{ url_for('logout') }}">logout</a>
+                            <a href="#">logout</a>
                         </li>
                                     
                     </ul>
@@ -58,32 +58,45 @@
               </nav>
 <div class="content">
     <div class="row">
-        <div class="col-md-12">
-            <table class="table table-hover">
-                <thead>
-                <th>No</th>
-                <th>Shopping Item</th>
-                <th>Description</th>
-                <th>Controls</th>
-                </thead>
-                <tbody>
-                    {{data}}
-                    <td></td>
-                    <td>{{ data['name'] }}</td>
-                    <td>{{ data['description'] }}</td>
-                    <td></td>     
-                </tbody>
-              </table>
-        </div>
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Add Item</div>
 
+                <div class="panel-body">
+                    <form class="form-horizontal" method="POST" action="{{ url_for('add_item') }}">
+                        
+
+                        <div class="form-group">
+                            <label for="name" class="col-md-4 control-label">Item Name</label>
+
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control" name="name" placeholder="Knife" required autofocus>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description" class="col-md-4 control-label">Description</label>
+
+                            <div class="col-md-6">
+                                <input id="description" type="text" class="form-control" name="description" placeholder="This is an item needed for the kitchen" required>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Add Item
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <nav aria-label="pages">
-            <ul class="pager">
-              <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
-              <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
-            </ul>
-          </nav>
                   
 </div>
                 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
