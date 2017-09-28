@@ -22,10 +22,14 @@ a{
 
 .content{
     margin-top: 150px;
+    background-color: #ffffff;
+
 }
 .row, .pager{
     width: 80%;
     margin: auto;
+    background-color: #fff;
+
 }
 .btn-primary{
     border-radius: 20px;
